@@ -6,6 +6,7 @@
 
 void read_cb(read_arg_t *arg) {
 	write(1, arg->buff, arg->len);
+	free(arg);
 }
 
 int main(int arvc, char **argv)
