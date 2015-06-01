@@ -1,7 +1,7 @@
 #include "tpool.h"
 #include "aio.h"
 
-int inited = 0;
+static int inited = 0;
 
 
 static void* aio__read(void *arg) {

@@ -1,9 +1,9 @@
 #ifndef TPOOL_H
+#define TPOOL_H
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
-#endif
 
 typedef struct read_arg_s {
 	int fd;
@@ -28,3 +28,4 @@ int aio_init();
  * 销毁
  */
 int aio_destroy();
+#endif
